@@ -44,7 +44,7 @@
 }
 @media screen and (min-width:1028px) {
     .navigator{
-        width: 12vw;
+        width: 13rem;
         height: 100vh;
 
         background: var(--branco-primario);
