@@ -1,0 +1,141 @@
+.consultas__diaTitulo{
+    color: var(--cor-primaria);
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.consultas{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.consultas__container{
+    
+    margin: 0.5rem 0;
+    background: var(--branco-primario);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+.consultas__paciente{
+    display: grid;
+    grid-template-columns: 5rem 1fr 3rem;
+    grid-template-rows:2rem 2rem;
+    align-items: center;
+   
+}
+.consultas__paciente-img{
+    width: 3rem;
+    border-radius: 50%;
+    grid-row-start: span 2;
+    grid-column-start: 1;
+    justify-self: center;
+}
+.consultas__paciente-nome{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--cor-primaria);
+    align-self: flex-end;
+}
+.consultas__icon{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width: 1rem;
+}
+.consultas__descricao{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    margin-left: 1.4rem;
+    font-weight: 400;
+    font-size: 12px;
+    color:var(--cinza-claro) ;
+}
+.consultas__chat{
+    width: 1rem;
+    grid-row-start: span 2;
+    grid-column-start: 3;
+    justify-self: center;
+}
+.consultas__horario{
+    color: var(--cor-primaria);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+.consultas__botoes-remota{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.consultas__local{
+    padding: 0 1rem;
+}
+.consultas__chamada-audio, .consultas__chamada-video{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 45%;
+}
+.consultas__chamada-audio{
+    color: var(--cor-primaria);
+    background-color: var(--branco-primario);
+    border: 1px solid var(--cinza-claro);
+}
+.consultas__chamada-video{
+    background-color: var(--laranja);
+    color: var(--branco-primario);
+    border: none;
+    box-shadow: 1px 1px 1px 1px  rgba(255, 176, 80, 0.16);
+}
+
+.consulta__map{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--azul);
+    color: var(--branco-primario);
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(72, 148, 255, 0.16);
+    border-radius: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.consultas__container:last-child{
+    margin-bottom: 5rem;
+}
+
+@media screen and (min-width:728px) {
+    .consultas{
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 1rem;
+        justify-content: center;
+    }
+    .consultas__container{
+        width: 45%;
+    }
+    .consultas__diaTitulo{
+        width: 100vw;
+    }
+}
+@media screen and (min-width:1028px) {
+    .consultas{
+        column-gap: 1rem;
+        justify-content:flex-start;
+    }
+    .consultas__container{
+        width: 32%;
+    }
+    .consultas__diaTitulo{
+        width: 100vw;
+    }
+    .consultas__container:last-child{
+        margin-bottom: 1rem;
+    }
+}

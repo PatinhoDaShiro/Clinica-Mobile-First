@@ -1,0 +1,25 @@
+@import url("styles/cabecalho.css");
+@import url("styles/consultas.css");
+@import url("styles/nav.css");
+
+:root{
+    --background:#EFF0F4;
+    --fonte:'Montserrat', sans-serif;
+    --cor-primaria:#464646;
+    --cinza-claro:#A3A3A3;
+    --branco-primario:#FFFFFF;
+    --laranja:#FFB050;
+    --azul:#4894FF;
+}
+body{
+    background-color: var(--background);
+    font-family: var(--fonte);
+    font-size: 16px;
+    padding: 0 2rem;
+}
+
+@media screen and (min-width:1028px) {
+    body{
+        padding: 0 2rem 0 30vh;
+    }
+}
