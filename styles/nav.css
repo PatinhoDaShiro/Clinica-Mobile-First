@@ -56,7 +56,8 @@
     .nav__navigator{
         padding-top: 2rem;
         padding-left: 1rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        font-weight: 700;
         background-color: var(--branco-primario);
         width: 100%;
         flex-wrap: wrap;
@@ -70,11 +71,12 @@
         padding: 1rem 1rem;
         gap: 1rem;
         width: 8vw;
-        transition: 1s;
+        
     }
     .nav__seletor:hover{
         background-color: var(--laranja);
         border-radius: 1rem;
         color: var(--azul);
+        transition: 1s;
     }
 }
